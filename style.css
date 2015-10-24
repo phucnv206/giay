@@ -1,0 +1,12 @@
+body{
+	background-color: #f4f3f3;
+}
+
+#main{
+	background-color: #FFF;
+	padding-top: 70px;
+	box-shadow: 0 0 1px 1px #CCC;
+}
+footer{
+	padding-top: 50px;	
+}
