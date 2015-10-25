@@ -8,6 +8,7 @@
     <title>Giày</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,93 +20,154 @@
   <body>
     
     <div id="main" class="container">
-      <nav id="top-navbar" class="navbar navbar-default navbar-fixed-top container">
+      <nav id="top-navbar" class="navbar navbar-default navbar-fixed-top container" data-spy="affix" data-offset-top="100">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="col-xs-6">
+                  <a href="#" class="logo">
+                    <img src="images/logo.jpg" alt="Logo">
+                  </a>
+                </div>
+                <div class="col-xs-6">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                </div>
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
+            </div>
+            <div class="col-sm-9">
+              <div class="collapse navbar-collapse" id="collapse-menu">
+                <div class="text-right nav-1">
+                  <ul class="clearfix">
+                    <li><a href="#">Tài khoản của tôi</a></li>
+                    <li><a href="#">Danh sách đơn hàng</a></li>
+                    <li><a href="#">Thanh toán</a></li>
+                  </ul>
+                </div>
+                <div class="row nav-2">
+                  <div class="col-sm-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Bạn cần tìm sản phẩm gì?">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i> Tìm</button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 text-right">
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                      </span>
+                      Giỏ hàng (0)
+                    </a>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                      </span>
+                      Đăng nhập
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!--
+          <div class="collapse navbar-collapse" id="collapse-menu">
+            <div class="navbar-right">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div> -->
         </div>
       </nav>
-      <div class="row">
+      <div class="row" id="top-main">
         <div class="col-sm-3">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
           Button with data-target
-          </button>
-          <div class="collapse in" id="collapseExample">
-            <ul class="list-group">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+          </button> -->
+          <div id="cate-menu">
+            <a href="#menu-collapse" data-toggle="collapse" id="menu-btn">
+              Danh mục sản phẩm
+              <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-arrow-down fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <div class="collapse in" id="menu-collapse">
+              <div id="menu-divider"></div>
+              <div class="list-group">
+                <a href="#" class="list-group-item"><i class="shoe"></i> Giày nam</a>
+                <a href="#" class="list-group-item"><i class="shoe"></i> Giày nam</a>
+                <a href="#" class="list-group-item"><i class="shoe"></i> Giày nam</a>
+                <a href="#" class="list-group-item"><i class="shoe"></i> Giày nam</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-sm-9">
-          <img src="http://placehold.it/1024x300" class="img-responsive">
+          <img src="images/banner.jpg" class="img-responsive">
         </div>
       </div>
       <!-- product -->
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Giày Nam</h4>
-        </div>
-        <div class="col-sm-6 text-right">
-          <a href="#">Thể thao</a> |
-          <a href="#">Casual</a> |
-          <a href="#">Lưới</a> |
-          <a href="#">Bata</a> |
-          <a href="#">Vải</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="http://placehold.it/1024x500" class="img-responsive">
-        </div>
-        <div class="col-sm-8">
-          <div class="row">
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
-              </div>
+      <div class="home-products">
+        <div class="row heading">
+          <div class="col-sm-6">
+            <span class="name">Giày Nam</span>
+          </div>
+          <div class="col-sm-6 text-right">
+            <div class="sub-cate">
+              <a href="#">Thể thao</a> |
+              <a href="#">Casual</a> |
+              <a href="#">Lưới</a> |
+              <a href="#">Bata</a> |
+              <a href="#">Vải</a>
             </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+          </div>
+        </div>
+        <div class="row list">
+          <div class="col-sm-5">
+            <p><img src="images/product.jpg" class="img-responsive"></p>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
             </div>
           </div>
@@ -113,46 +175,50 @@
       </div>
       <!-- end product -->
       <!-- product -->
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Giày Nam</h4>
-        </div>
-        <div class="col-sm-6 text-right">
-          <a href="#">Thể thao</a> |
-          <a href="#">Casual</a> |
-          <a href="#">Lưới</a> |
-          <a href="#">Bata</a> |
-          <a href="#">Vải</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="http://placehold.it/1024x500" class="img-responsive">
-        </div>
-        <div class="col-sm-8">
-          <div class="row">
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
-              </div>
+      <div class="home-products">
+        <div class="row heading">
+          <div class="col-sm-6">
+            <span class="name">Giày Nam</span>
+          </div>
+          <div class="col-sm-6 text-right">
+            <div class="sub-cate">
+              <a href="#">Thể thao</a> |
+              <a href="#">Casual</a> |
+              <a href="#">Lưới</a> |
+              <a href="#">Bata</a> |
+              <a href="#">Vải</a>
             </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+          </div>
+        </div>
+        <div class="row list">
+          <div class="col-sm-5">
+            <p><img src="images/product.jpg" class="img-responsive"></p>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
             </div>
           </div>
@@ -160,46 +226,50 @@
       </div>
       <!-- end product -->
       <!-- product -->
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Giày Nam</h4>
-        </div>
-        <div class="col-sm-6 text-right">
-          <a href="#">Thể thao</a> |
-          <a href="#">Casual</a> |
-          <a href="#">Lưới</a> |
-          <a href="#">Bata</a> |
-          <a href="#">Vải</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="http://placehold.it/1024x500" class="img-responsive">
-        </div>
-        <div class="col-sm-8">
-          <div class="row">
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
-              </div>
+      <div class="home-products">
+        <div class="row heading">
+          <div class="col-sm-6">
+            <span class="name">Giày Nam</span>
+          </div>
+          <div class="col-sm-6 text-right">
+            <div class="sub-cate">
+              <a href="#">Thể thao</a> |
+              <a href="#">Casual</a> |
+              <a href="#">Lưới</a> |
+              <a href="#">Bata</a> |
+              <a href="#">Vải</a>
             </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+          </div>
+        </div>
+        <div class="row list">
+          <div class="col-sm-5">
+            <p><img src="images/product.jpg" class="img-responsive"></p>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
             </div>
           </div>
@@ -207,46 +277,50 @@
       </div>
       <!-- end product -->
       <!-- product -->
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Giày Nam</h4>
-        </div>
-        <div class="col-sm-6 text-right">
-          <a href="#">Thể thao</a> |
-          <a href="#">Casual</a> |
-          <a href="#">Lưới</a> |
-          <a href="#">Bata</a> |
-          <a href="#">Vải</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="http://placehold.it/1024x500" class="img-responsive">
-        </div>
-        <div class="col-sm-8">
-          <div class="row">
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
-              </div>
+      <div class="home-products">
+        <div class="row heading">
+          <div class="col-sm-6">
+            <span class="name">Giày Nam</span>
+          </div>
+          <div class="col-sm-6 text-right">
+            <div class="sub-cate">
+              <a href="#">Thể thao</a> |
+              <a href="#">Casual</a> |
+              <a href="#">Lưới</a> |
+              <a href="#">Bata</a> |
+              <a href="#">Vải</a>
             </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+          </div>
+        </div>
+        <div class="row list">
+          <div class="col-sm-5">
+            <p><img src="images/product.jpg" class="img-responsive"></p>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
             </div>
           </div>
@@ -254,46 +328,101 @@
       </div>
       <!-- end product -->
       <!-- product -->
-      <div class="row">
-        <div class="col-sm-6">
-          <h4>Giày Nam</h4>
+      <div class="home-products">
+        <div class="row heading">
+          <div class="col-sm-6">
+            <span class="name">Giày Nam</span>
+          </div>
+          <div class="col-sm-6 text-right">
+            <div class="sub-cate">
+              <a href="#">Thể thao</a> |
+              <a href="#">Casual</a> |
+              <a href="#">Lưới</a> |
+              <a href="#">Bata</a> |
+              <a href="#">Vải</a>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6 text-right">
-          <a href="#">Thể thao</a> |
-          <a href="#">Casual</a> |
-          <a href="#">Lưới</a> |
-          <a href="#">Bata</a> |
-          <a href="#">Vải</a>
+        <div class="row list">
+          <div class="col-sm-5">
+            <p><img src="images/product.jpg" class="img-responsive"></p>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="http://placehold.it/1024x500" class="img-responsive">
+      <!-- end product -->
+      <!-- product -->
+      <div class="home-products">
+        <div class="row heading">
+          <div class="col-sm-6">
+            <span class="name">Giày Nam</span>
+          </div>
+          <div class="col-sm-6 text-right">
+            <div class="sub-cate">
+              <a href="#">Thể thao</a> |
+              <a href="#">Casual</a> |
+              <a href="#">Lưới</a> |
+              <a href="#">Bata</a> |
+              <a href="#">Vải</a>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-8">
-          <div class="row">
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+        <div class="row list">
+          <div class="col-sm-5">
+            <p><img src="images/product.jpg" class="img-responsive"></p>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-4">
-              <img src="http://placehold.it/1024x500" class="img-responsive">
-              <p>Giày mọi nam</p>
-              <div class="clearfix">
-                <span class="pull-left">Mã: 0010</span>
-                <span class="pull-right"><b>800.000</b> VND</span>
+              <div class="col-xs-4">
+                <img src="images/product-2.jpg" class="img-responsive">
+                <div class="p-name">Giày mọi nam</div>
+                <div class="clearfix">
+                  <span class="pull-left p-id">Mã: 0010</span>
+                  <span class="pull-right p-price"><b>800.000</b> VND</span>
+                </div>
               </div>
             </div>
           </div>
@@ -303,40 +432,52 @@
       <footer>
         <div class="row">
           <div class="col-sm-3">
-            <h4>Về chúng tôi</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <div class="heading">Về chúng tôi</div>
+            <div class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
           </div>
           <div class="col-sm-3">
-            <h4>Sản phẩm</h4>
-            <p>Giày</p>
-            <p>Giày</p>
-            <p>Giày</p>
-            <p>Giày</p>
-          </div>
-          <div class="col-sm-3">
-            <h4>Thông tin</h4>
-            <p>Sản phẩm mới</p>
-            <p>Sản phẩm mới</p>
-          </div>
-          <div class="col-sm-3">
-            <h4>Nhận tin từ chúng tôi</h4>
-            <p>Đăng ký để nhận được các thông tin về giảm giá và các sản phẩm mới nhất trong mail của bạn
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Go!</button>
-                </span>
+            <div class="heading">Sản phẩm</div>
+            <div class="cate row">
+              <div class="col-xs-6">
+                <a href="#">Giày nam</a>
+                <a href="#">Giày nam</a>
+                <a href="#">Giày nam</a>
+                <a href="#">Giày nam</a>
+              </div>
+              <div class="col-xs-6">
+                <a href="#">Giày nam</a>
+                <a href="#">Giày nam</a>
+                <a href="#">Giày nam</a>
+                <a href="#">Giày nam</a>
               </div>
             </div>
           </div>
-          <div class="text-center">&copy; 2015 All Rights Reserved.</div>
-        </footer>
-      </div>
-      
-      
-      
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    </body>
-  </html>
+          <div class="col-sm-2">
+            <div class="heading">Thông tin</div>
+            <div class="cate">
+              <a href="#">Sản phẩm mới</a>
+              <a href="#">Sản phẩm bán chạy</a>
+            </div>
+          </div>
+          <div class="col-sm-4 subscribe">
+            <div class="heading">Nhận tin từ chúng tôi</div>
+            <div class="text text-justify">Đăng ký để nhận được các thông tin về giảm giá và các sản phẩm mới nhất trong mail của bạn</div>
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-paper-plane"></i></button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="copyright">&copy; 2015 All Rights Reserved.</div>
+      </footer>
+    </div>
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  </body>
+</html>
