@@ -1,14 +1,32 @@
+@font-face {
+    font-family: fRegular;
+    src: url('UTM Swiss Condensed.ttf');
+}
+@font-face {
+    font-family: fBold;
+    src: url('UTM Swiss CondensedBold.ttf');
+}
 body{
 	background-color: #f4f3f3;
 	font-size: 16px;
+	font-family: fRegular;
+}
+b{
+	font-family: fBold;
 }
 #top-navbar{
 	background-color: #182b77;
 	color: #FFF;
 	font-size: 14px;
 }
+#top-navbar.affix-top{
+	padding-bottom: 10px;
+}
 #top-navbar.affix .nav-1{
 	display: none;
+}
+#top-navbar.affix-top .logo img{
+	max-height: 90px;
 }
 #top-navbar.affix .logo img{
 	max-height: 50px;
@@ -21,7 +39,8 @@ body{
 }
 #top-navbar ul li{
 	float: left;
-	margin-left: 30px
+	margin-left: 30px;
+	line-height: 30px;
 }
 #top-navbar ul li:first-child{
 	list-style-type: none;
@@ -32,6 +51,7 @@ body{
 #top-navbar .form-control{
 	border-radius: 0;
 	border: none;
+	height: 37px;
 }
 #top-navbar .input-group-btn .btn{
 	background-color: #fc3d35;
@@ -39,13 +59,14 @@ body{
 	color: #FFF;
 	margin: 0;
 	border-radius: 0;
-	height: 34px;
+	height: 37px;
 }
 #top-navbar .nav-2{
 	margin-top: 8px;
 }
 #top-navbar .nav-2 a{
 	margin-left: 20px;
+	text-decoration: none;
 }
 #top-navbar .nav-2 a i.fa-inverse{
 	color: #182b77;
@@ -59,6 +80,18 @@ body{
 }
 #top-main{
 	margin-bottom: 30px;
+}
+.page-product #top-main .col-sm-3{
+	padding-right: 0;
+}
+.page-product #top-main .col-sm-9{
+	padding-left: 0;
+}
+.page-product #top-main .breadcrumb{
+	background-color: #e4e4e4;
+	border-radius: 0;
+	height: 47px;
+	line-height: 34px;
 }
 #cate-menu{
 	background-color: #efeff0;
@@ -80,6 +113,9 @@ body{
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
+	line-height: 28px;
+	padding: 8px 15px;
+	position: relative;
 }
 #cate-menu .shoe{
 	background: transparent url('images/shoe.png') no-repeat center center;
@@ -94,23 +130,37 @@ body{
 	background-color: #fb5165;
 	color: #FFF;
 }
-.home-products{
+#cate-menu .list-group .list-group{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.page-index .home-products{
 	margin-bottom: 30px;
 }
 .home-products .heading{
 	text-transform: uppercase;
 	border-bottom: 1px solid #efeff0;
 	margin-bottom: 30px;
+	border-left: 3px solid #ed9831;
 }
 .home-products .heading .name{
 	background-color: #efeff0;
-	border-left: 3px solid #ed9831;
 	font-size: 30px;
-	padding: 5px 10px;
+	padding: 2px 10px;
 	display: inline-block;
 }
+.home-products .heading .order-opt{
+	margin: 14px 15px 0 15px;
+}
+.home-products .heading .btn-group{
+    margin-top: 10px;
+}
+.home-products .heading .btn-group .btn{
+	padding: 4px 12px;
+}
 .home-products .heading .sub-cate{
-	line-height: 52px;
+	line-height: 46px;
 }
 .home-products .heading .sub-cate a{
 	text-decoration: none;
@@ -124,14 +174,29 @@ body{
 .home-products .list .p-price{
 	color: #fc3d35;
 }
+.home-products .list .col-sm-15{
+	min-height: 330px;
+}
+.home-products .pagination li a{
+	border-radius: 0;
+	border: none;
+	background-color: #e4e4e4;
+	color: #020527;
+}
+.home-products .pagination li.active a{
+	background-color: #020527;
+	color: #FFF;
+}
 footer{
 	padding: 30px 30px 0 30px;
 	color: #FFF;
 	background-color: #020527;
 	margin-left: -30px;
 	margin-right: -30px;
-	margin-top: 70px;
 	font-size: 14px;
+}
+.page-index footer{
+	margin-top: 70px;
 }
 footer .heading{
 	color: #fc3d35;
@@ -162,4 +227,56 @@ footer #copyright{
 	padding: 15px 0;
 	margin-top: 30px;
 	text-transform: uppercase;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15,
+.col-xs-25,
+.col-sm-25,
+.col-md-25,
+.col-lg-25 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+.col-xs-25 {
+    width: 40%;
+    float: left;
+}
+@media (min-width: 768px) {
+	.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+	.col-sm-25 {
+        width: 40%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+    .col-md-25 {
+        width: 40%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+    .col-lg-25 {
+        width: 40%;
+        float: left;
+    }
 }
