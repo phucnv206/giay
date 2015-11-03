@@ -26,6 +26,11 @@ a:hover {
     color: #182b77;
 }
 
+.margin-v-15{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 #top-navbar {
     background-color: #182b77;
     color: #FFF;
@@ -109,6 +114,19 @@ a:hover {
 
 #top-main {
     margin-bottom: 30px;
+    z-index: 1;
+    left: 40px;
+    right: 40px;
+}
+
+#top-main.affix {
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+}
+
+#top-navbar.affix + #top-main {
+    top: 50px;
 }
 
 .page-product #top-main .breadcrumb {
@@ -119,8 +137,8 @@ a:hover {
 }
 
 #cate-menu {
-    background-color: #efeff0;
     text-transform: uppercase;
+    position: relative;
 }
 
 #cate-menu #menu-btn {
@@ -132,18 +150,72 @@ a:hover {
     text-decoration: none !important;
 }
 
+#cate-menu:hover #menu-btn + #menu-collapse {
+    display: block;
+}
+
+#cate-menu #menu-collapse {
+    position: absolute;
+    width: 100%;
+    display: none;
+    background-color: #efeff0;
+    z-index: 1;
+}
+
+#cate-menu #menu-collapse.in {
+    display: block;
+}
+
+#cate-menu #menu-collapse a {
+    display: block;
+    text-decoration: none;
+    line-height: 28px;
+    color: #757575;
+}
+
+#cate-menu #menu-collapse .menu > a {
+    padding: 7px 15px;
+}
+
+#cate-menu #menu-collapse .menu:hover {
+    background-color: #fb5165;
+}
+
+#cate-menu #menu-collapse .menu:hover > a {
+    color: #FFF;
+}
+
+#cate-menu #menu-collapse .menu {
+    position: relative;
+}
+
+#cate-menu #menu-collapse .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(239, 239, 240, 0.7);
+    border-left: 5px solid #fb5165;
+    left: 100%;
+    top: 0;
+    width: 60%;
+    z-index: 1;
+}
+
+#cate-menu #menu-collapse .menu:hover .submenu {
+    display: block;
+}
+
+#cate-menu #menu-collapse .menu:hover .submenu a {
+    padding: 4px 20px;
+}
+
+#cate-menu #menu-collapse .menu:hover .submenu a:hover {
+    background-color: #fb5165;
+    color: #FFF;
+}
+
 #cate-menu #menu-divider {
     border-top: 1px solid #d4d4d4;
     margin: 0 15px;
-}
-
-#cate-menu .list-group-item {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    line-height: 28px;
-    padding: 8px 15px;
-    position: relative;
 }
 
 #cate-menu .shoe {
@@ -154,17 +226,6 @@ a:hover {
     vertical-align: middle;
     margin-top: -5px;
     margin-right: 5px;
-}
-
-#cate-menu .list-group-item:hover {
-    background-color: #fb5165;
-    color: #FFF;
-}
-
-#cate-menu .list-group .list-group {
-    position: absolute;
-    right: 0;
-    top: 0;
 }
 
 .page-index .home-products {
@@ -204,7 +265,16 @@ a:hover {
 .home-products .heading .sub-cate a {
     text-decoration: none;
     color: inherit;
-    padding: 0 15px;
+    margin: 0 15px;
+}
+
+.home-products .heading .sub-cate a:hover {
+    color: #fb5165;
+}
+
+.home-products .list a {
+    color: #333;
+    text-decoration: none;
 }
 
 .home-products .list .p-name {
@@ -273,15 +343,27 @@ a:hover {
     margin: 0;
 }
 
+#product-detail .info .stock {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 #product-detail .info .size li {
     padding: 5px 8px;
     border: 1px solid #efeff0;
     display: inline-block;
     margin-right: 5px;
+    width: 34px;
+    text-align: center;
 }
 
-#product-detail .info .stock {
-    margin: 30px 0;
+#product-detail .info .stock li {
+    padding: 6px 9px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 34px;
+    text-align: center;
 }
 
 #product-detail .info #quantity {
@@ -295,8 +377,19 @@ a:hover {
     color: #FFF;
     text-transform: uppercase;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 60px;
     margin: 15px 0;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+#product-detail .info .checkout-btn i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 13.5px 18px;
+    background-color: #d2181a;
 }
 
 #product-detail .heading {
@@ -318,6 +411,11 @@ a:hover {
 
 #product-detail .relate .item {
     margin-bottom: 30px;
+}
+
+#product-detail .relate .item a{
+    color: #333;
+    text-decoration: none;
 }
 
 #product-detail .relate .item img {
