@@ -113,20 +113,22 @@ a:hover {
 }
 
 #top-main {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     z-index: 1;
-    left: 40px;
-    right: 40px;
+    margin-left: -30px;
+    margin-right: -30px;
 }
 
 #top-main.affix {
-    margin-left: auto;
-    margin-right: auto;
     top: 100px;
 }
 
 #top-navbar.affix + #top-main {
     top: 50px;
+}
+
+#top-main.affix + .home-products{
+    margin-top: 100px;
 }
 
 .page-product #top-main .breadcrumb {
@@ -236,7 +238,7 @@ a:hover {
     text-transform: uppercase;
     border-bottom: 1px solid #efeff0;
     margin-bottom: 30px;
-    border-left: 3px solid #ed9831;
+    border-left: 3px solid #fb5165;
 }
 
 .home-products .heading .name {
@@ -289,7 +291,7 @@ a:hover {
     min-height: 330px;
 }
 
-` .home-products .pagination li a {
+.home-products .pagination li a {
     border-radius: 0;
     border: none;
     background-color: #e4e4e4;
@@ -372,7 +374,7 @@ a:hover {
     text-align: center;
 }
 
-#product-detail .info .checkout-btn {
+.checkout-btn {
     background-color: #ef1f21;
     color: #FFF;
     text-transform: uppercase;
@@ -384,7 +386,12 @@ a:hover {
     position: relative;
 }
 
-#product-detail .info .checkout-btn i{
+.checkout-btn:hover{
+    background-color: #d2181a;
+    color: #FFF;
+}
+
+.checkout-btn i{
     position: absolute;
     left: 0;
     top: 0;
@@ -428,6 +435,59 @@ a:hover {
 
 #product-detail .relate .item .p-price {
     color: #fc3d35;
+}
+
+#cart-info {
+    margin-bottom: 30px;
+}
+
+#cart-info .heading {
+    color: #666666;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+#cart-info .p-qty {
+    display: inline-block;
+}
+
+#cart-info .p-qty div {
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+}
+
+#cart-info .p-qty .qty-btn{
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+
+#cart-info .p-qty .val{
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 13px;
+}
+
+#cart-info .total,
+#cart-info .del-btn {
+    color: #fc3d35;
+}
+
+#cart-info .item {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#cart-info .thumb {
+    min-width: 100%;
+}
+
+#cart-info .checkout-btn{
+    margin: 30px 0;
 }
 
 footer {

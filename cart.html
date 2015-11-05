@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giày</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="main" class="container page-product">
+        <nav id="top-navbar" class="navbar navbar-default navbar-fixed-top container" data-spy="affix" data-offset-top="100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="#" class="logo">
+                                    <img src="images/logo.jpg" alt="Logo">
+                                </a>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="collapse navbar-collapse" id="collapse-menu">
+                            <div class="text-right nav-1">
+                                <ul class="clearfix">
+                                    <li><a href="#">Tài khoản của tôi</a></li>
+                                    <li><a href="#">Danh sách đơn hàng</a></li>
+                                    <li><a href="#">Thanh toán</a></li>
+                                </ul>
+                            </div>
+                            <div class="row nav-2">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Bạn cần tìm sản phẩm gì?">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i> Tìm</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <a href="#">
+                                        <div class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                                        </div> Giỏ hàng (0)
+                                    </a>
+                                    <a href="#">
+                                        <div class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                        </div> Đăng nhập
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row" id="top-main">
+            <div class="col-sm-3">
+                <div id="cate-menu">
+                    <a href="#" id="menu-btn">
+                        <span>Danh mục sản phẩm</span>
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-arrow-down fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <div id="menu-collapse">
+                        <div id="menu-divider"></div>
+                        <div class="menu">
+                            <a href="#">
+                                <i class="shoe"></i> Giày nam
+                            </a>
+                            <div class="submenu">
+                                <a href="#">Giày nam</a>
+                                <a href="#">Giày nam</a>
+                                <a href="#">Giày nam</a>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <a href="#">
+                                <i class="shoe"></i> Giày nam
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a href="#">
+                                <i class="shoe"></i> Giày nam
+                            </a>
+                            <div class="submenu">
+                                <a href="#">Giày nam</a>
+                                <a href="#">Giày nam</a>
+                                <a href="#">Giày nam</a>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <a href="#">
+                                <i class="shoe"></i> Giày nam
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#">Giày nam</a></li>
+                    <li>Giày mọi nam Lostes thanh lịch</li>
+                </ol>
+            </div>
+        </div>
+        <div id="cart-info">
+            <div class="heading">Chi tiết sản phẩm trong giỏ hàng</div>
+            <div class="list">
+                <!--item-->
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="images/product-3.jpg" class="thumb img-responsive">
+                                </div>
+                                <div class="col-xs-5">
+                                    <b>Giày mọi nam Lostes thanh lịch</b><br>
+                                    Mã số: 002<br>
+                                    Màu xanh
+                                </div>
+                                <div class="col-xs-3">
+                                    Kích thước<br>
+                                    <b>Size 45</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-xs-3 text-center">
+                                    Số lượng<br>
+                                    <div class="p-qty clearfix">
+                                        <div class="qty-btn minus pull-left">-</div>
+                                        <div class="val pull-left">1</div>
+                                        <div class="qty-btn plus pull-left">+</div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    Giá<br>
+                                    <b>430.000VND</b>
+                                </div>
+                                <div class="col-xs-3">
+                                    Thành tiền<br>
+                                    <span class="total"><b>860.000VND</b></span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="del-btn">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                            <i class="fa fa-times fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="images/product-3.jpg" class="thumb img-responsive">
+                                </div>
+                                <div class="col-xs-5">
+                                    <b>Giày mọi nam Lostes thanh lịch</b><br>
+                                    Mã số: 002<br>
+                                    Màu xanh
+                                </div>
+                                <div class="col-xs-3">
+                                    Kích thước<br>
+                                    <b>Size 45</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-xs-3 text-center">
+                                    Số lượng<br>
+                                    <div class="p-qty clearfix">
+                                        <div class="qty-btn minus pull-left">-</div>
+                                        <div class="val pull-left">1</div>
+                                        <div class="qty-btn plus pull-left">+</div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    Giá<br>
+                                    <b>430.000VND</b>
+                                </div>
+                                <div class="col-xs-3">
+                                    Thành tiền<br>
+                                    <span class="total"><b>860.000VND</b></span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="del-btn">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                            <i class="fa fa-times fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-6">
+                        <div class="row">
+                            <div class="col-xs-8 text-right">
+                                <b>Tổng cộng: <span class="total">1.720.000VND</span></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-default checkout-btn"><i class="fa fa-arrow-right"></i> &nbsp; Đặt hàng</button>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="heading">Về chúng tôi</div>
+                    <div class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="heading">Sản phẩm</div>
+                    <div class="cate row">
+                        <div class="col-xs-6">
+                            <a href="#">Giày nam</a>
+                            <a href="#">Giày nam</a>
+                            <a href="#">Giày nam</a>
+                            <a href="#">Giày nam</a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="#">Giày nam</a>
+                            <a href="#">Giày nam</a>
+                            <a href="#">Giày nam</a>
+                            <a href="#">Giày nam</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="heading">Thông tin</div>
+                    <div class="cate">
+                        <a href="#">Sản phẩm mới</a>
+                        <a href="#">Sản phẩm bán chạy</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 subscribe">
+                    <div class="heading">Nhận tin từ chúng tôi</div>
+                    <div class="text text-justify">Đăng ký để nhận được các thông tin về giảm giá và các sản phẩm mới nhất trong mail của bạn</div>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">&copy; 2015 All Rights Reserved.</div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.p-qty .qty-btn').click(function(){
+                var btn = $(this);
+                var plus = btn.hasClass('plus');
+                var val = btn.parent().find('.val');
+                var text = val.text();
+                if (plus) {
+                    text++;
+                } else if (text > 1) {
+                    text--;
+                }
+                val.text(text);
+            });
+        });
+    </script>
+</body>
+
+</html>
