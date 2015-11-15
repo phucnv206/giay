@@ -160,6 +160,7 @@
                                         <div class="qty-btn minus pull-left">-</div>
                                         <div class="val pull-left">1</div>
                                         <div class="qty-btn plus pull-left">+</div>
+                                        <input type="hidden" name="quantity" value="1">
                                     </div>
                                 </div>
                                 <div class="col-xs-3">
@@ -297,6 +298,7 @@
                 var btn = $(this);
                 var plus = btn.hasClass('plus');
                 var val = btn.parent().find('.val');
+                var field = btn.parent().find('input[name=quantity]');
                 var text = val.text();
                 if (plus) {
                     text++;
@@ -304,6 +306,7 @@
                     text--;
                 }
                 val.text(text);
+                field.val(text);
             });
         });
     </script>

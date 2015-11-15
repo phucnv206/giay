@@ -152,6 +152,20 @@ a:hover {
     text-decoration: none !important;
 }
 
+#cate-menu #menu-divider {
+    border-top: 1px solid #d4d4d4;
+    margin: 0 15px;
+}
+
+#cate-menu .menu .shoe {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
 #cate-menu:hover #menu-btn + #menu-collapse {
     display: block;
 }
@@ -179,10 +193,6 @@ a:hover {
     padding: 7px 15px;
 }
 
-#cate-menu #menu-collapse .menu:hover {
-    background-color: #fb5165;
-}
-
 #cate-menu #menu-collapse .menu:hover > a {
     color: #FFF;
 }
@@ -195,7 +205,6 @@ a:hover {
     display: none;
     position: absolute;
     background-color: rgba(239, 239, 240, 0.7);
-    border-left: 5px solid #fb5165;
     left: 100%;
     top: 0;
     width: 60%;
@@ -210,24 +219,151 @@ a:hover {
     padding: 4px 20px;
 }
 
-#cate-menu #menu-collapse .menu:hover .submenu a:hover {
-    background-color: #fb5165;
+#cate-menu .menu.c-giaynam .shoe {
+    background: transparent url('images/xam_giaynam.png') no-repeat center center;
+}
+
+#cate-menu .menu.c-giaynam:hover {
+    background-color: #F09745;
+}
+
+#cate-menu .menu.c-giaynam:hover .shoe {
+    background: transparent url('images/giaynam.png') no-repeat center center;
+}
+
+#cate-menu #menu-collapse .menu.c-giaynam .submenu {
+    border-left: 5px solid #F09745;
+}
+
+#cate-menu #menu-collapse .menu.c-giaynam:hover .submenu a:hover {
+    background-color: #F09745;
     color: #FFF;
 }
 
-#cate-menu #menu-divider {
-    border-top: 1px solid #d4d4d4;
-    margin: 0 15px;
+#cate-menu .menu.c-giaynu .shoe {
+    background: transparent url('images/xam_giaynu.png') no-repeat center center;
 }
 
-#cate-menu .shoe {
-    background: transparent url('images/shoe.png') no-repeat center center;
-    width: 28px;
-    height: 28px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -5px;
-    margin-right: 5px;
+#cate-menu .menu.c-giaynu:hover {
+    background-color: #FF4F66;
+}
+
+#cate-menu .menu.c-giaynu:hover .shoe {
+    background: transparent url('images/giaynu.png') no-repeat center center;
+}
+
+#cate-menu #menu-collapse .menu.c-giaynu .submenu {
+    border-left: 5px solid #FF4F66;
+}
+
+#cate-menu #menu-collapse .menu.c-giaynu:hover .submenu a:hover {
+    background-color: #FF4F66;
+    color: #FFF;
+}
+
+#cate-menu .menu.c-giaythethao .shoe {
+    background: transparent url('images/xam_giaythethao.png') no-repeat center center;
+}
+
+#cate-menu .menu.c-giaythethao:hover {
+    background-color: #1593EA;
+}
+
+#cate-menu .menu.c-giaythethao:hover .shoe {
+    background: transparent url('images/giaythethao.png') no-repeat center center;
+}
+
+#cate-menu #menu-collapse .menu.c-giaythethao .submenu {
+    border-left: 5px solid #1593EA;
+}
+
+#cate-menu #menu-collapse .menu.c-giaythethao:hover .submenu a:hover {
+    background-color: #1593EA;
+    color: #FFF;
+}
+
+#cate-menu .menu.c-giaycasual .shoe {
+    background: transparent url('images/xam_giaycasual.png') no-repeat center center;
+}
+
+#cate-menu .menu.c-giaycasual:hover {
+    background-color: #64CA42;
+}
+
+#cate-menu .menu.c-giaycasual:hover .shoe {
+    background: transparent url('images/giaycasual.png') no-repeat center center;
+}
+
+#cate-menu #menu-collapse .menu.c-giaycasual .submenu {
+    border-left: 5px solid #64CA42;
+}
+
+#cate-menu #menu-collapse .menu.c-giaycasual:hover .submenu a:hover {
+    background-color: #64CA42;
+    color: #FFF;
+}
+
+#cate-menu .menu.c-giayluoi .shoe {
+    background: transparent url('images/xam_giayluoi.png') no-repeat center center;
+}
+
+#cate-menu .menu.c-giayluoi:hover {
+    background-color: #00B9B2;
+}
+
+#cate-menu .menu.c-giayluoi:hover .shoe {
+    background: transparent url('images/giayluoi.png') no-repeat center center;
+}
+
+#cate-menu #menu-collapse .menu.c-giayluoi .submenu {
+    border-left: 5px solid #00B9B2;
+}
+
+#cate-menu #menu-collapse .menu.c-giayluoi:hover .submenu a:hover {
+    background-color: #00B9B2;
+    color: #FFF;
+}
+
+#cate-menu .menu.c-giayvai .shoe {
+    background: transparent url('images/xam_giayvai.png') no-repeat center center;
+}
+
+#cate-menu .menu.c-giayvai:hover {
+    background-color: #C052B6;
+}
+
+#cate-menu .menu.c-giayvai:hover .shoe {
+    background: transparent url('images/giayvai.png') no-repeat center center;
+}
+
+#cate-menu #menu-collapse .menu.c-giayvai .submenu {
+    border-left: 5px solid #C052B6;
+}
+
+#cate-menu #menu-collapse .menu.c-giayvai:hover .submenu a:hover {
+    background-color: #C052B6;
+    color: #FFF;
+}
+
+#cate-menu .menu.c-giaybata .shoe {
+    background: transparent url('images/xam_giaybata.png') no-repeat center center;
+}
+
+#cate-menu .menu.c-giaybata:hover {
+    background-color: #FF323C;
+}
+
+#cate-menu .menu.c-giaybata:hover .shoe {
+    background: transparent url('images/giaybata.png') no-repeat center center;
+}
+
+#cate-menu #menu-collapse .menu.c-giaybata .submenu {
+    border-left: 5px solid #FF323C;
+}
+
+#cate-menu #menu-collapse .menu.c-giaybata:hover .submenu a:hover {
+    background-color: #FF323C;
+    color: #FFF;
 }
 
 .page-index .home-products {
@@ -238,14 +374,48 @@ a:hover {
     text-transform: uppercase;
     border-bottom: 1px solid #efeff0;
     margin-bottom: 30px;
-    border-left: 3px solid #fb5165;
+}
+
+.home-products .heading .shoe {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+}
+
+.home-products .heading.c-giaynam .shoe {
+    background: transparent url('images/L_GIAYNAM.png') no-repeat center center;
+}
+
+.home-products .heading.c-giaynu .shoe {
+    background: transparent url('images/L_GIAYNU.png') no-repeat center center;
+}
+
+.home-products .heading.c-giaythethao .shoe {
+    background: transparent url('images/L_GIAYTHETHAO.png') no-repeat center center;
+}
+
+.home-products .heading.c-giaycasual .shoe {
+    background: transparent url('images/L_GIAYCASUAL.png') no-repeat center center;
+}
+
+.home-products .heading.c-giayluoi .shoe {
+    background: transparent url('images/L_GIAYLUOI.png') no-repeat center center;
+}
+
+.home-products .heading.c-giayvai .shoe {
+    background: transparent url('images/L_GIAYVAI.png') no-repeat center center;
+}
+
+.home-products .heading.c-giaybata .shoe {
+    background: transparent url('images/L_GIAYBATA.png') no-repeat center center;
 }
 
 .home-products .heading .name {
     background-color: #efeff0;
     font-size: 30px;
     padding: 2px 10px;
-    display: inline-block;
+    min-height: 47px;
+    margin-left: 48px;
 }
 
 .home-products .heading .order-opt {
