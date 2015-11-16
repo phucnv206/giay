@@ -556,9 +556,17 @@ a:hover {
     position: relative;
 }
 
-.checkout-btn:hover{
-    background-color: #d2181a;
+.checkout-btn:hover,
+.checkout-btn:visited {
+    background-color: #d2181a !important;
     color: #FFF;
+}
+
+.checkout-btn:active,
+.checkout-btn:focus {
+    background-color: #ef1f21 !important;
+    color: #FFF;
+	outline: none;
 }
 
 .checkout-btn i{
