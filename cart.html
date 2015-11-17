@@ -158,9 +158,8 @@
                                     Số lượng<br>
                                     <div class="p-qty clearfix">
                                         <div class="qty-btn minus pull-left">-</div>
-                                        <div class="val pull-left">1</div>
+                                        <input class="val pull-left" value="1">
                                         <div class="qty-btn plus pull-left">+</div>
-                                        <input type="hidden" name="quantity" value="1">
                                     </div>
                                 </div>
                                 <div class="col-xs-3">
@@ -208,7 +207,7 @@
                                     Số lượng<br>
                                     <div class="p-qty clearfix">
                                         <div class="qty-btn minus pull-left">-</div>
-                                        <div class="val pull-left">1</div>
+                                        <input class="val pull-left" value="1">
                                         <div class="qty-btn plus pull-left">+</div>
                                     </div>
                                 </div>
@@ -298,15 +297,13 @@
                 var btn = $(this);
                 var plus = btn.hasClass('plus');
                 var val = btn.parent().find('.val');
-                var field = btn.parent().find('input[name=quantity]');
-                var text = val.text();
+                var text = val.val();
                 if (plus) {
                     text++;
                 } else if (text > 1) {
                     text--;
                 }
-                val.text(text);
-                field.val(text);
+                val.val(text);
             });
         });
     </script>
