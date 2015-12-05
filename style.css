@@ -449,16 +449,29 @@ a:hover {
     text-decoration: none;
 }
 
-.home-products .list .p-name {
-    margin: 10px 0;
+.home-products .list .detail {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.home-products .list .detail .floating {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    transform: translateY(20px);
+    transition: all .3s;
+}
+
+.home-products .list .detail:hover .floating {
+    transform: translateY(0);
 }
 
 .home-products .list .p-price {
     color: #fc3d35;
-}
-
-.home-products .list .col-sm-15 {
-    min-height: 330px;
 }
 
 .home-products .pagination li a {
