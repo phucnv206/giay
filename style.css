@@ -453,21 +453,23 @@ a:hover {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    border: 1px solid transparent;
+    transition: all .3s;
 }
 
 .home-products .list .detail .floating {
     position: absolute;
     width: 100%;
     bottom: 0;
-    padding: 0 5px;
+    font-size: 14px;
+    padding: 6px 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFF;
-    transform: translateY(20px);
-    transition: all .3s;
+    pointer-events: none;
 }
 
-.home-products .list .detail:hover .floating {
-    transform: translateY(0);
+.home-products .list .detail:hover {
+    border-color: #fc3d35;
 }
 
 .home-products .list .p-price {
