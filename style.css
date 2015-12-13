@@ -383,6 +383,14 @@ a:hover {
     position: absolute;
 }
 
+.home-products .heading.c-noibat .shoe {
+    background: transparent url('images/L_NOIBAT.png') no-repeat center center;
+}
+
+.home-products .heading.c-khuyenmai .shoe {
+    background: transparent url('images/L_KHUYENMAI.png') no-repeat center center;
+}
+
 .home-products .heading.c-giaynam .shoe {
     background: transparent url('images/L_GIAYNAM.png') no-repeat center center;
 }
@@ -445,6 +453,23 @@ a:hover {
     color: #fb5165;
 }
 
+.home-products .heading .navigator {
+    float: right;
+}
+
+.home-products .heading .navigator .nav-left {
+    background: #efeff0 url('images/slide-left.png') no-repeat center center;
+    width: 47px;
+    height: 47px;
+    margin-right: 15px;
+}
+
+.home-products .heading .navigator .nav-right {
+    background: #efeff0 url('images/slide-right.png') no-repeat center center;
+    width: 47px;
+    height: 47px;
+}
+
 .home-products .list a {
     color: #333;
     text-decoration: none;
@@ -459,6 +484,16 @@ a:hover {
     transition: all .3s;
 }
 
+.home-products .list .detail .ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 7px;
+    background-color: #fc3d35;
+    color: #FFF;
+    pointer-events: none;
+}
+
 .home-products .list .detail .floating {
     position: absolute;
     width: 100%;
@@ -470,6 +505,15 @@ a:hover {
     pointer-events: none;
 }
 
+.home-products .list .detail .floating .old-price {
+    font-size: 13px;
+}
+
+.home-products .list .detail .floating a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .home-products .list .detail:hover {
     border-color: #fc3d35;
 }
@@ -478,14 +522,16 @@ a:hover {
     color: #fc3d35;
 }
 
-.home-products .pagination li a {
+.home-products .pagination li a,
+#news .pagination li a {
     border-radius: 0;
     border: none;
     background-color: #e4e4e4;
     color: #020527;
 }
 
-.home-products .pagination li.active a {
+.home-products .pagination li.active a,
+#news .pagination li.active a {
     background-color: #020527;
     color: #FFF;
 }
@@ -511,6 +557,17 @@ a:hover {
     margin-bottom: 50px;
 }
 
+#product-detail .info .old-price {
+    display: inline;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: line-through;
+}
+
+#product-detail .info .discount {
+    display: inline;
+}
+
 #product-detail .info h2,
 #product-detail .info h3 {
     margin-top: 0;
@@ -522,8 +579,16 @@ a:hover {
 
 #product-detail .info h3 {
     color: #ef1f21;
-    padding-bottom: 20px;
+}
+
+#product-detail .info:not(.discount) h3,
+#product-detail .info.discount h4.save {
     border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 15px;
+}
+
+#product-detail .info.discount h4.save .inline {
+    display: inline-block;
 }
 
 #product-detail .info .size {
@@ -706,6 +771,18 @@ a:hover {
     line-height: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#news .news-thumb {
+    width: 100%;
+}
+
+#news .news-title {
+    color: #fc3d35;
+}
+
+#news .item {
+    margin-bottom: 30px;
 }
 
 footer {
