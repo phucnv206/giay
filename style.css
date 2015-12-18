@@ -773,6 +773,23 @@ a:hover {
     margin-bottom: 5px;
 }
 
+#cart-info .news-more .heading {
+    text-transform: uppercase;
+    padding-top: 7px;
+}
+
+#cart-info .news-more ul {
+    padding-left: 20px;
+}
+
+#cart-info .news-more ul > li {
+    margin-bottom: 15px;
+}
+
+#cart-info .news-more ul > li a {
+    color: inherit;
+}
+
 #news .news-thumb {
     width: 100%;
 }
@@ -784,6 +801,8 @@ a:hover {
 #news .item {
     margin-bottom: 30px;
 }
+
+
 
 footer {
     padding: 30px 30px 0 30px;
