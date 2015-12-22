@@ -507,6 +507,7 @@ a:hover {
 
 .home-products .list .detail .floating .old-price {
     font-size: 13px;
+    text-decoration: line-through;
 }
 
 .home-products .list .detail .floating a {
